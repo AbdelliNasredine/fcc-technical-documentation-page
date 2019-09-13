@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Duke_%28Java_mascot%29_waving.svg/220px-Duke_%28Java_mascot%29_waving.svg.png"
+                alt="java logo">
+            Java
+        </header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Java_Virtual_Machine">Java Virtual Machine</a>
+        <a class="nav-link" href="#First_Java_Program">First Java Program</a>
+        <a class="nav-link" href="#OOPS_Concepts">OOPS Concepts</a>
+        <a class="nav-link" href="#Java_Variables">Java Variables</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <h3>What is JAVA ?</h3>
+            <p>Java is a programming language and a computing platform for application development. It was first
+                released by <b>Sun Microsystem in 1995</b> and later acquired by Oracle Corporation. It is one of the
+                most used
+                programming languages.</p>
+            <h3>What is Java Platform ?</h3>
+            <p>Java platform is a collection of programs that help to develop and run programs written in the Java
+                programming language. Java platform includes an execution engine, a compiler, and a set of libraries.
+                JAVA is platform-independent language. It is not specific to any processor or operating system.
+            </p>
+        </section>
+        <section class="main-section" id="Java_Virtual_Machine">
+            <header>Java Virtual Machine</header>
+            <h3>What's JVM ?</h3>
+            <p>JVM is a engine that provides runtime environment to drive the Java Code or applications. It converts
+                Java bytecode into machines language. JVM is a part of JRE(Java Run Environment). It stands for Java
+                Virtual Machine</p>
+            <ul>
+                <li>In other programming languages, the compiler produces machine code for a particular system. However,
+                    Java compiler produces code for a Virtual Machine known as Java Virtual Machine.</li>
+                <li>First, Java code is complied into bytecode. This bytecode gets interpreted on different machines
+                </li>
+                <li>Between host system and Java source, Bytecode is an intermediary language.</li>
+                <li>JVM is responsible for allocating memory space.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="First_Java_Program">
+            <header>First Java Program</header>
+            <h3>How to Create Your First Java Program</h3>
+            <p>You need the following 2 software to create your first Java Program</p>
+            <ul>
+                <li><b>The Java SE Development Kit</b> please refere to this link to
+                    <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">download and install JDK</a></li>
+                <li><b>A Text Editor / IDE</b> Any text editor will do the job just fine but we recommend you to install
+                    an IDE like <b>eclipce</b> or
+                    <b>inteljIDEA</b> </li>
+            </ul>
+            <h3>Steps to Compile and Run first Java program</h3>
+            <p>Open your text editor or IDE , and create a new file and copy the below code :
+            </p>
+            <div class="code">
+                <code>
+                    public class MyfirstProgramInJava {
+                    public void main(String[] args) {
+                    System.out.println("Hello World");
+                    }
+                    }
+                </code>
+            </div>
+            <p>Save the file as <b>FirstProgram.java</b> (make sure that the files has <b>.java</b> extenstion )</p>
+            <p>Open the command prompt / terminal . Go to Directory where you have saved the file. Compile the code
+                using command :</p>
+            <div class="code">
+                <code>
+                    javac FirstProgram.java
+                </code>
+            </div>
+            <p>If you look in your working folder, you can see that a file named <b>A.class</b> has been created.</p>
+            <p>To execute the code, enter the command java followed by the class name, as expected output Hello World is
+                displayed now.</p>
+            <div class="code">
+                <code>
+                    java A
+                </code>
+            </div>
+            <p>
+                <b>Note:</b> Java is case sensitive Programming language. All code, commands, and file names should is
+                used in consistent casing. <b>FirstProgram</b> is not same as <b>firstprogram</b>.
+            </p>
+        </section>
+        <section class="main-section" id="OOPS_Concepts">
+            <header>OOPS Concepts</header>
+            <h3>What is OOPS</h3>
+            <p>Object Oriented Programming is a programming concept that works on the principle that objects are the
+                most important part of your program. It allows users create the objects that they want and then create
+                methods to handle those objects. Manipulating these objects to get results is the goal of Object
+                Oriented Programming.</p>
+        </section>
+        <section class="main-section" id="Java_Variables">
+            <header>Java Variables</header>
+            <h3>What is a Variable</h3>
+            <p>A variable can be thought of as a container which holds value for you, during the life of a Java program.
+                Every variable is assigned a data type which designates the type and quantity of value it can hold.</p>
+            <h3>Variable Declaration</h3>
+            <p>To declare a variable, you must specify the data type & give the variable a unique name. Examples of other Valid Declarations are :</p>
+            <div class="code">
+                <code>
+                        int a,b,c; <br>
+
+                        float pi; <br>
+                        
+                        double d; <br>
+                        
+                        char a; 
+                </code>
+            </div>
+            <h3>Variable Initialization:</h3>
+            <p>To initialize a variable, you must assign it a valid value. Example of other Valid Initializations are :</p>
+            <div class="code">
+                <code>
+                        pi =3.14f; <br>
+
+                        do =20.22d; <br>
+                         
+                        a=’v’; <br>
+                </code>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
